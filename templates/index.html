@@ -1,0 +1,161 @@
+<!doctype html>
+
+
+<head>
+  
+    <meta charset=utf-8>
+    <style>
+      @import @import
+  url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap");
+
+html {
+  font-family: "Merriweather", serif;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+article {
+  padding: 1rem;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+h2 {
+  text-transform: capitalize;
+}
+p {
+  text-align: justify;
+  hyphens: auto;
+}
+
+/* different style for 1st paragraph*/
+p:first-of-type {
+  font-size: 1.1rem;
+}
+/* Drop Cap */
+p:first-of-type:first-letter {
+  font-size: 4.2rem;
+  font-weight: bold;
+  float: left;
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding-right: 0.15rem;
+  color: white;
+  background-color: #fc0595;
+  padding: 1.2rem 0.5rem;
+  margin-right: 0.5rem;
+}
+p:first-of-type:first-line {
+  font-weight: bold;
+}
+
+.border {
+    background-image:
+    linear-gradient(to bottom, rgb(34, 32, 33), rgb(59, 30, 52));
+    /* url(); */
+    width: 1460px;
+    height: 1200px;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+}
+    
+ .go{
+     text-align: center;
+}
+ h1 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 100px;
+  color: #fc0595;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+h1 span {
+  display: block;
+  font-size: 0.5em;
+  line-height: 1.3;
+}
+h1 em {
+  font-style: normal;
+  font-weight: 600;
+}
+.nine h1 {
+  text-align:center; font-size:90px; text-transform:uppercase; color:#fc0595; letter-spacing:1px;
+  font-family:"Playfair Display", serif; font-weight:400;
+}
+.nine h1 span {
+  margin-top: 5px;
+    font-size:15px; color:rgb(196, 180, 180); word-spacing:1px; font-weight:normal; letter-spacing:2px;
+    text-transform: uppercase; font-family:"Raleway", sans-serif; font-weight:500;
+
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.nine h1 span:after,.nine h1 span:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    height: 5px;
+  background-color:#f8f8f8;
+} 
+img {
+  border: 5px solid rgb(219, 85, 179);
+}
+
+
+
+
+         
+       
+    </style>
+ </head>
+    <body>
+      <div class="border">
+        <div class="nine">
+            <h1>Air Canvas<span>An openCv Project</span></h1>
+          </div>
+      
+        <div class="go" ><a href="/my-link/">
+            <img src="http://infoaryan.com/wp-content/uploads/2020/06/aircanvas.jpg" alt="W3Schools.com" width="650" height="400">
+            </a>
+                     
+
+            <article>
+              <h3 style="font-size: 20px;text-shadow: 1px 1px #e058ac">
+                Click on the image to open air canvas.
+              </h3>
+              <h3 style="font-size: 20px; text-shadow: 1px 1px #e058ac">
+                After drawing, if you want to quit and save, press "q" on the keyboard 
+              </h3>
+
+              <h1 style="font-size: 50px;text-shadow: 2px 2px #e058ac">About Project</h1>
+              <p>Ever wanted to draw your imagination by just waving your finger in the air.Well your dream came true . This is an Air Canvas 
+                which can draw anything on it by just capturing the motion of a colored marker with a camera. Here a colored object at the tip of the 
+                finger is used as the marker.We used computer vision techniques of OpenCV to build this project. </p>
+              <p> The preferred language is Python due to its exhaustive 
+                libraries and easy to use syntax but understanding the basics it can be implemented in any OpenCV supported language.
+                Here Color Detection and tracking are used in order to achieve the objective. The color marker is detected and a mask is pr
+                oduced. It includes the further steps of morphological operations on the mask produced which are Erosion and Dilation. Erosi
+                educes the impurities present in the mask and dilation further restores the eroded main mask.</p>
+            
+              
+            </article>
+           
+          </div>
+          </div>
+    </body>
